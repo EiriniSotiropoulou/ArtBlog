@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+
+body{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    width:40%
+}
+
+nav ul li {
+    display: inline-block;    
+}
+
+li:last-child{
+    /* position: relative; */
+}
+
+.primary-login-btn{
+    background-color: rgb(31, 31, 151);
+    border-color: rgb(31, 31, 151);
+    border-radius: 6px;
+    color: white;
+    font-family: Roboto;
+    font-size: small;
+    padding: 15px;  
+    size: 15px;  
+}
+
+.secondary-sign-btn{
+    color: rgb(31, 31, 151);
+    border-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: small;
+    padding: 15px;  
+    size: 15px;  
+}
+
+
+
+main .banner{
+    background-image: "https://media.cntraveler.com/photos/59ef91dd8d4f736d51415c2e/master/w_2667,h_2000,c_limit/7MileBeach-2013-HiRes.jpg";
+    background-size:cover;
+    width: 100%;
+    height: 50%;
+
+}
