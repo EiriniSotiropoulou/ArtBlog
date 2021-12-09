@@ -1,0 +1,22 @@
+// scss file for theme colours & get functions
+
+//Your variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+$theme-colors: (
+  "primary": #e9caca,
+  "danger": #ff4136,
+);
+
+@function color($key: "blue") {
+  @return map-get($colors, $key);
+}
+
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+@function gray($key: "100") {
+  @return map-get($grays, $key);
+}

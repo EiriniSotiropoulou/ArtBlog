@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #e9caca;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+/* section styling */
+section {
+  padding: 100px 0;
+}
+
+/* menu styling */
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  width: 40%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.primary-login-btn {
+  background-color: #1f1f97;
+  border-color: #1f1f97;
+  border-radius: 6px;
+  color: white;
+  font-family: Roboto;
+  font-size: small;
+  padding: 15px;
+  size: 15px;
+}
+
+.secondary-sign-btn {
+  color: #1f1f97;
+  border-color: white;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-size: small;
+  padding: 15px;
+  size: 15px;
+}
+
+/* banner styling */
+.banner {
+  background: #e9caca;
+  box-shadow: 0 0 1px rgba(233, 202, 202, 0.25);
+  color: #fff;
+}
+
+.banner {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: red;
+}
+
+/*# sourceMappingURL=custom.css.map */
