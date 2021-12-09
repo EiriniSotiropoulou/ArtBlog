@@ -7,11 +7,11 @@
 
 <h2>Technologies & Frameworks used</h2>
 <ul>
-  <li>HTML<li>
-  <li>CSS<li>
-  <li>SCSS<li>
-  <li>Vanilla JS<li>
-  <li>Bootstrap<li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>SCSS</li>
+  <li>Vanilla JS</li>
+  <li>Bootstrap</li>
 </ul>
 
 <h2>Prerequisites</h2>
