@@ -2,7 +2,6 @@
 
 <h2>About</h2>
 <p>Art Blog with the purpose of providing a space for users to express their artistic needs in the form of artworks and articles.</p>
-<p>HTML, CSS, SCSS, JS, Bootstrap.<p/>
 <p>You can check out our <em>figma</em> project <a href="https://www.figma.com/file/vq8DnoD8wuhUqxmhuebFYR/ArtBlog-Project?node-id=125%3A137">here</a>.</p>
 
 <h2>Technologies & Frameworks used</h2>
