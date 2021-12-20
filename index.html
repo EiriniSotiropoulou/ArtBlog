@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css">
 
     <!-- custom -->
     <link rel="stylesheet" href="build/custom.css">
@@ -25,10 +25,10 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container p-3">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid p-3">
                 <div class="row justify-content-between">
-                    <a class="navbar-brand col-sm-2" href="#">Lulukeia Blog</a>
+                    <a class="navbar-brand col-sm-2" href="#" class="me-1">Lulukeia Blog</a>
                     <button class="navbar-toggler col-sm-1" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navigation,#sign" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -37,24 +37,18 @@
                     <div class="collapse navbar-collapse col-sm-4" id="navigation">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item ps-lg-4">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                <a class="nav-link active" aria-current="page" href="#" class="me-1">Blog</a>
                             </li>
                             <li class="nav-item ps-lg-4">
-                                <a class="nav-link" href="#">Artists</a>
+                                <a class="nav-link" href="#" class="me-1">Artists</a>
                             </li>
                             <li class="nav-item dropdown ps-lg-4">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Galleries
+                                <a class="nav-link" href="#" class="me-1" role="button">
+                                    Movements
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Local</a></li>
-                                    <li><a class="dropdown-item" href="#">Impressionist</a></li>
-                                    <li><a class="dropdown-item" href="#">Romantic</a></li>
-                                </ul>
                             </li>
                             <li class="nav-item ps-lg-4">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact" class="me-1">Contact</a>
                             </li>
                         </ul>
 
@@ -73,127 +67,159 @@
     </header>
 
     <main>
-        <section class="banner container-fluid">
+        <section class="banner container-fluid" id="banner">
             <div class="row justify-content-around align-items-center" style="width:100%">
-                <h1 class=" display-1 col-md-6 banner-child">Welcome to Lulukeia</h1>
+                <h1 class=" display-1 col-md-8 banner-child">Welcome to Lulukeia</h1>
                 <button class="display-2 btn btn-outline-success p-4 col-md-1 banner-child">Start tour</button>
             </div>
         </section>
 
         <section class="blog container-fluid " id="blog">
-
-            <div class="artworks mt-lg-5 ms-lg-5 me-lg-5">
-                <div id="ArtCarousel" class="carousel  Art" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="artworks mt-lg-5">
+                <div id="ArtCarousel" class="carousel slide Art" data-bs-ride="carousel" data-bs-interval="0">
                     <div class="carousel-inner" role="listbox">
+
                         <div class="carousel-item active">
-                            <div class="col-md-3 p-1 ">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="//via.placeholder.com/500x400/cbd1dab0?text=1" class="img-fluid">
+                            <div class="col-md-3  ">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="resources/unsplash_aAxn9pYE8L0.png" class="img-fluid w-100">
+                                        </div>
+                                        <div class="card-img-overlay p-lg-4">
+                                            <h2>Article #1 - Author</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
+                                                aliquam
+                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
+                                                earum a
+                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
+                                        </div>
                                     </div>
-                                    <div class="card-img-overlay p-lg-4">
-                                        <h2>Article #1 - Author</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae aliquam
-                                            dicta quia ratione eaque omnis tempora distinctio porro recusandae, earum a
-                                            aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-3 p-1">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="//via.placeholder.com/500x400/cbd1dab0?text=2" class="img-fluid">
+                            <div class="col-md-3 ">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-img ">
+                                            <img src="resources/unsplash_TjegK_z-0j8.png" class="w-100">
+                                        </div>
+                                        <div class="card-img-overlay p-lg-4">
+                                            <h2>Article #2 - Author</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
+                                                aliquam
+                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
+                                                earum a
+                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
+                                        </div>
                                     </div>
-                                    <div class="card-img-overlay p-lg-4">
-                                        <h2>Article #1 - Author</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae aliquam
-                                            dicta quia ratione eaque omnis tempora distinctio porro recusandae, earum a
-                                            aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <div class="col-md-3 ms-4 me-4">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="resources/rand.jpg" class="img-fluid w-100">
+                                        </div>
+                                        <div class="card-img-overlay p-lg-4">
+                                            <h2>Article #3 - Author</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
+                                                aliquam
+                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
+                                                earum a
+                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div></a>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-3 p-1">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="//via.placeholder.com/500x400/cbd1dab0?text=3" class="img-fluid">
+                            <div class="col-md-3  ms-4 me-4">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="resources/unsplash_TjegK_z-0j8.png" class="img-fluid w-100">
+                                        </div>
+                                        <div class="card-img-overlay p-lg-4">
+                                            <h2>Article #4 - Author</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
+                                                aliquam
+                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
+                                                earum a
+                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
+                                        </div>
                                     </div>
-                                    <div class="card-img-overlay p-lg-4">
-                                        <h2>Article #1 - Author</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae aliquam
-                                            dicta quia ratione eaque omnis tempora distinctio porro recusandae, earum a
-                                            aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                    </div>
-                                </div>
-                            </div>
+                                </a>
+                            </div></a>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-3 p-1">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="//via.placeholder.com/500x400/cbd1dab0?text=4" class="img-fluid">
+                            <div class="col-md-3 ms-4 me-4">
+                                <a href="#"> 
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="resources/unsplash_aAxn9pYE8L0.png" class="img-fluid w-100">
+                                        </div>
+                                        <div class="card-img-overlay p-lg-1">
+                                            <h2>Article #5 - Author</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
+                                                aliquam
+                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
+                                                earum a
+                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
+                                        </div>
                                     </div>
-                                    <div class="card-img-overlay p-lg-4">
-                                        <h2>Article #1 - Author</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae aliquam
-                                            dicta quia ratione eaque omnis tempora distinctio porro recusandae, earum a
-                                            aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3 p-1">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="//via.placeholder.com/500x400/cbd1dab0?text=5" class="img-fluid">
-                                    </div>
-                                    <div class="card-img-overlay p-lg-4">
-                                        <h2>Article #1 - Author</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae aliquam
-                                            dicta quia ratione eaque omnis tempora distinctio porro recusandae, earum a
-                                            aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3 p-1">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="//via.placeholder.com/500x400/cbd1dab0?text=6" class="img-fluid">
-                                    </div>
-                                    <div class="card-img-overlay p-lg-4">
-                                        <h2>Article #1 - Author</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae aliquam
-                                            dicta quia ratione eaque omnis tempora distinctio porro recusandae, earum a
-                                            aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
-                    <button class="carousel-control-prev m-1" type="button" data-bs-target="#ArtCarousel"
-                        data-bs-slide="prev">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button class="button-prev" type="button" data-bs-target="#ArtCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next m-1" type="button" data-bs-target="#ArtCarousel"
-                        data-bs-slide="next">
+                    <div class="girl-div w-50 d-flex .align-self-baseline">
+                        <img src="./resources/standing-24.png" alt="standing-girl" class="img-fluid">
+                    </div>
+
+                    <button class="button-next" type="button" data-bs-target="#ArtCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="description"></div>
+            </div>
         </section>
-
+        <!-- 
         <section class="artists container-fluid" id="artists">
+        </section> -->
+
+        <section id="contact" class="contact row">
+            <div class="left col-sm-12 col-lg-6">
+                <h1 class="title pb-5">Get in Touch</h1>
+                <div class="row">
+                    <div class="social col-sm-6 col-lg-12">
+                        <ul>
+                            <li class="mail m-2"><i class="fa fa-envelope pe-4"></i>hello@lulukeia.com</li>
+                            <li class="instagram m-2"><i  class="fab fa-instagram pe-4"></i>@lulukeia.gallery</li>
+                            <li class="location m-2"><i class="fas fa-search-location pe-4"></i>Greece</li>
+                        </ul>
+                    </div>
+                    <div class="illustrations col-sm-6 col-lg-12"></div>
+                </div>
+            </div>
+            <div class="right col-sm-12  col-lg-6">
+                <h1 class="title pb-5">About us</h1>
+                <p class="about-us p-5 fs-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. In necessitatibus sit
+                    ratione. Alias fugiat delectus officiis fuga libero velit consequatur minus possimus ipsum
+                    exercitationem, eum, neque quia, beatae voluptatibus odio?</p>
+                <div class="pictures"></div>
+            </div>
+
+
         </section>
-
-
 
         <footer></footer>
         <!-- Optional JavaScript -->
@@ -204,6 +230,7 @@
             integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
             crossorigin="anonymous"></script>
         <script src="/script.js"></script>
+
 
 
 </body>

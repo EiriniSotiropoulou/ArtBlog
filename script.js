@@ -14,6 +14,14 @@ items.forEach((el) => {
   }
 });
 
+// items.forEach((el) => {
+//   if (!el.classList.contains("active")) {
+//     el.classList.add("opacity");
+//   } else {
+//     el.classList.add("d-flex");
+//   }
+// });
+
 // hide show article content on hover
 let descriptions = document.querySelectorAll(".card-img-overlay");
 
@@ -32,4 +40,15 @@ descriptions.forEach((des) => {
     },
     false
   );
+});
+
+// edit padding of section
+
+let sections = document.querySelectorAll("section");
+let navheight = document.querySelectorAll("nav")[0].clientHeight;
+navheight-=1;
+sections.forEach((sec) => {
+  if (sec.getAttribute("id") != "blog") {
+    sec.style.paddingTop = navheight + "px";
+  }
 });

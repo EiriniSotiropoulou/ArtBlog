@@ -3,9 +3,58 @@
 @use "colours";
 @use "mixins";
 
+// section styling
+
+
+body {
+  background-color: colours.theme-color("primary-light") !important;
+}
+
+// nav styling
+nav {
+  background: colours.theme-color("primary-medium");
+  height: 12%;
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+nav a {
+  color: colours.theme-color("primary-light") !important;
+}
+
+#sign {
+  justify-content: end;
+}
+
+.join .secondarybutton {
+  margin-right: 0.3em;
+  color: colours.theme-color("primary-light") !important;
+  border-color: colours.theme-color("primary-light") !important;
+}
+
+.join .secondarybutton i {
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+}
+
+.join .primarybutton {
+  background-color: colours.theme-color("primary-light") !important;
+  // color: colours.theme-color("primary-dark")!important;
+  // border-color: colours.theme-color("primary-light")!important;;
+}
+#navigation .navbar-nav {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
+// banner styling
+
 .banner {
-  background: #dbdfe5;
-  min-height: 300px;
+  background-color: colours.theme-color("primary-light") !important;
 }
 
 .row {
@@ -15,36 +64,17 @@
 }
 
 .banner .row {
-  background: #dbdfe5;
-  min-height: 300px;
+  background: colours.theme-color("primary-light") !important;
+  min-height: 150px;
 }
 
-#sign {
-  justify-content: end;
+// blog styling
+.blog {
+  background-color: colours.theme-color("primary-light") !important;
 }
 
-.join .secondarybutton {
-  margin-right: 0.3em;
-}
-
-.join .secondarybutton i {
-  padding: 0.3em;
-}
-
-#navigation .navbar-nav {
-  display: flex;
-  width: 100%;
-  justify-content: start;
-}
 //  carousel styling
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-/* medium and up screens */
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;
@@ -59,7 +89,7 @@
 .carousel-inner .carousel-item-prev {
   display: flex;
 }
-//
+
 /* medium and up screens */
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-end.active,
@@ -78,6 +108,14 @@
   transform: translateX(0);
 }
 
+.card {
+  border: none;
+}
+
+.card .card-img img {
+  height: 330px;
+  border: none;
+}
 .card .card-img-overlay {
   opacity: 0;
   font-weight: 500;
@@ -96,21 +134,79 @@
   opacity: 100;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-  width: 5%;
-}
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+  width: 4em !important;
+  height: 3em !important;
 }
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  width: 4em !important;
+  height: 3em !important;
 }
 
-.carousel-control-prev {
-  left: -70px;
+.carousel-item a:hover {
+  color: black;
 }
 
-.carousel-control-next {
-  right: -70px;
+.carousel-item a:hover .card-img img {
+  opacity: 50%;
+}
+
+.artworks img {
+  height: 200px;
+  // transform: translateY(-35%);
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.button-prev,
+.button-next {
+  border: none;
+  background: none;
+}
+
+.girl-div img {
+  height: 250px;
+  margin-top: -90px;
+  z-index: 4;
+}
+
+// contact styling
+.contact{
+  min-height: 100vh;
+}
+
+.contact h1{
+  font-size: 90px;
+  text-align: center;
+}
+.contact .left {
+  background-color: colours.theme-color("primary-light") !important;
+  color: colours.theme-color("primary-dark") !important;
+
+}
+
+.contact .left li{
+  font-size: 30px;
+  list-style: none;
+}
+
+
+.contact .right {
+  background-color: colours.theme-color("primary-dark") !important;
+  color:colours.theme-color("primary-light") !important; 
+}
+
+.contact .right p{
+  text-align: right;
 }
