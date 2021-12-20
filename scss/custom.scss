@@ -5,9 +5,28 @@
 
 // section styling
 
-
 body {
   background-color: colours.theme-color("primary-light") !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 // nav styling
@@ -57,7 +76,8 @@ nav a {
   background-color: colours.theme-color("primary-light") !important;
 }
 
-.row {
+.banner .row,
+nav .row {
   width: 100%;
   margin: 0;
   height: 100%;
@@ -182,31 +202,52 @@ nav a {
 }
 
 // contact styling
-.contact{
+.contact {
   min-height: 100vh;
+  width: 100%;
+}
+.contact .row {
+  width: 100%;
+}
+.contact.row {
+  --bs-gutter-x: 0px !important;
 }
 
-.contact h1{
+.contact h1 {
   font-size: 90px;
   text-align: center;
 }
 .contact .left {
   background-color: colours.theme-color("primary-light") !important;
   color: colours.theme-color("primary-dark") !important;
-
+}
+.contact .left .illustrations img {
+  margin: 1em;
 }
 
-.contact .left li{
+.contact .left .illustrations :nth-child(1) {
+  width: 9% !important;
+}
+.contact .left .illustrations :nth-child(2) {
+  width: 9% !important;
+}
+.contact .left .illustrations :nth-child(3) {
+  width: 15% !important;
+}
+.contact .left .illustrations :nth-child(4) {
+  width: 10% !important;
+}
+
+.contact .left li {
   font-size: 30px;
   list-style: none;
 }
 
-
 .contact .right {
   background-color: colours.theme-color("primary-dark") !important;
-  color:colours.theme-color("primary-light") !important; 
+  color: colours.theme-color("primary-light") !important;
 }
 
-.contact .right p{
+.contact .right p {
   text-align: right;
 }
