@@ -8,7 +8,6 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
@@ -27,7 +26,7 @@
     <header>
         <nav class="navbar navbar-expand-md ">
             <div class="container-fluid p-3">
-                <div class="row justify-content-between">
+                <div class="d-flex w-100 justify-content-between">
                     <a class="navbar-brand col-sm-2" href="#" class="me-1">Lulukeia Blog</a>
                     <button class="navbar-toggler col-sm-1" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navigation,#sign" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -53,7 +52,7 @@
                         </ul>
 
                     </div>
-                    <div class="col-sm-4 d-flex join">
+                    <div cld-flex ass="col-sm-4 join">
                         <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
                         <div class="collapse navbar-collapse" id="sign">
                             <button class="btn btn-outline-success secondarybutton" type="submit"><i
@@ -68,126 +67,161 @@
 
     <main>
         <section class="banner container-fluid" id="banner">
-            <div class="row justify-content-around align-items-center" style="width:100%">
+            <div class=" main row d-flex justify-content-around align-items-center" style="width:100%">
                 <h1 class=" display-1 col-md-8 banner-child">Welcome to Lulukeia</h1>
                 <button class="display-2 btn btn-outline-success p-4 col-md-1 banner-child">Start tour</button>
             </div>
         </section>
 
-        <section class="blog container-fluid " id="blog">
-            <div class="artworks">
-                <div id="ArtCarousel" class="carousel slide Art" data-bs-ride="carousel" data-bs-interval="0">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="col-md-3  ">
-                                <a href="#">
+        <section class="blog" id="blog">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="carousel multi-item-carousel slide" id="myCarousel" data-bs-ride="carousel"
+                        data-bs-interval="false">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
                                     <div class="card">
-                                        <div class="card-img">
-                                            <img src="resources/unsplash_aAxn9pYE8L0.png" class="img-fluid w-100">
-                                        </div>
-                                        <div class="card-img-overlay p-lg-4">
-                                            <h2>Article #1 - Author</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
-                                                aliquam
-                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
-                                                earum a
-                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                        </div>
+                                        <div class="card-img"> <img src="./resources/unsplash_aAxn9pYE8L0.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 1</div>
                                     </div>
-                                </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./resources/unsplash_TjegK_z-0j8.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 2</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./resources/unsplash_TjegK_z-0j8.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 3</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./resources/unsplash_TjegK_z-0j8.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./resources/unsplash_TjegK_z-0j8.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=4"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=5"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=5"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=5"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=6"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=5"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=5"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=6"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="//via.placeholder.com/500x400/fc0?text=7"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3 ">
-                                <a href="#">
-                                    <div class="card">
-                                        <div class="card-img ">
-                                            <img src="resources/unsplash_TjegK_z-0j8.png" class="w-100">
-                                        </div>
-                                        <div class="card-img-overlay p-lg-4">
-                                            <h2>Article #2 - Author</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
-                                                aliquam
-                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
-                                                earum a
-                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+
+                        <div class="slider-control">
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#myCarousel" role="button"
+                                data-bs-slide="prev"> <span class="carousel-control-prev-icon"
+                                    aria-hidden="true"></span> </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#myCarousel" role="button"
+                                data-bs-slide="next"> <span class="carousel-control-next-icon"
+                                    aria-hidden="true"></span>
+                            </a>
                         </div>
-                        <!-- <div class="carousel-item">
-                            <div class="col-md-3 ms-4 me-4">
-                                <a href="#">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="resources/rand.jpg" class="img-fluid w-100">
-                                        </div>
-                                        <div class="card-img-overlay p-lg-4">
-                                            <h2>Article #3 - Author</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
-                                                aliquam
-                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
-                                                earum a
-                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div></a>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3  ms-4 me-4">
-                                <a href="#">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="resources/unsplash_TjegK_z-0j8.png" class="img-fluid w-100">
-                                        </div>
-                                        <div class="card-img-overlay p-lg-4">
-                                            <h2>Article #4 - Author</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
-                                                aliquam
-                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
-                                                earum a
-                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div></a>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-3 ms-4 me-4">
-                                <a href="#"> 
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="resources/unsplash_aAxn9pYE8L0.png" class="img-fluid w-100">
-                                        </div>
-                                        <div class="card-img-overlay p-lg-1">
-                                            <h2>Article #5 - Author</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae
-                                                aliquam
-                                                dicta quia ratione eaque omnis tempora distinctio porro recusandae,
-                                                earum a
-                                                aliquid quos sapiente optio, quaerat quasi natus vitae!</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <button class="button-prev" type="button" data-bs-target="#ArtCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <div class="girl-div w-50 d-flex .align-self-baseline">
-                        <img src="./resources/standing-24.png" alt="standing-girl" class="img-fluid">
+
                     </div>
 
-                    <button class="button-next" type="button" data-bs-target="#ArtCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </section>
@@ -195,10 +229,10 @@
         <section class="artists container-fluid" id="artists">
         </section> -->
 
-        <section id="contact" class="contact row">
+        <section id="contact" class="contact d-flex">
             <div class="left col-sm-12 col-lg-6">
                 <h1 class="title pb-5">Get in Touch</h1>
-                <div class="row align-content-start">
+                <div class="d-flex row align-content-start">
                     <div class="social h-25 col-sm-6 col-lg-12">
                         <ul>
                             <li class="mail m-2"><i class="fa fa-envelope pe-4"></i>hello@lulukeia.com</li>
@@ -206,7 +240,7 @@
                             <li class="location m-2"><i class="fas fa-search-location pe-4"></i>Greece</li>
                         </ul>
                     </div>
-                    <div class="illustrations d-flex justify-content-between col-sm-6 col-lg-12">
+                    <div class="d-flex illustrations justify-content-between col-sm-6 col-lg-12">
 
                         <img src="./resources/Illustration - pavan 706.svg" alt="">
                         <img src="./resources/Illustration - pavan 705.svg" alt="">
@@ -224,7 +258,7 @@
                         sit
                         ratione. Alias fugiat delectus officiis fuga libero velit consequatur minus possimus ipsum
                         exercitationem, eum, neque quia, beatae voluptatibus odio?</p>
-                    <div class="pictures justify-content-between d-flex">
+                    <div class="pictures d-flex justify-content-between">
                         <img src="./resources/ArtBlock (2).png" class="w-25" alt="">
                         <img src="./resources/ArtBlock (1).png" class="w-25" alt="">
                         <img src="./resources/ArtBlock (3).png" class="w-25" alt="">
@@ -232,8 +266,6 @@
                 </div>
 
             </div>
-
-
         </section>
 
         <footer></footer>
@@ -244,6 +276,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
             crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="/script.js"></script>
 
 

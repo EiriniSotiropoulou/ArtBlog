@@ -1,52 +1,28 @@
-let items = document.querySelectorAll(".carousel .carousel-item");
+$(document).ready(function () {
+  $(".multi-item-carousel .carousel-item").each(function () {
+    var itemToClone = $(this);
 
-items.forEach((el) => {
-  const minPerSlide = 4;
-  let next = el.nextElementSibling;
-  for (var i = 1; i < minPerSlide; i++) {
-    if (!next) {
-      // wrap carousel by using first child
-      next = items[0];
+    for (var i = 1; i < 4; i++) {
+      itemToClone = itemToClone.next();
+
+      if (!itemToClone.length) {
+        itemToClone = $(this).siblings(":first");
+      }
+
+      itemToClone
+        .children(":first-child")
+        .clone()
+        .addClass("cloneditem-" + i)
+        .appendTo($(this));
     }
-    let cloneChild = next.cloneNode(true);
-    el.appendChild(cloneChild.children[0]);
-    next = next.nextElementSibling;
-  }
-});
-
-// items.forEach((el) => {
-//   if (!el.classList.contains("active")) {
-//     el.classList.add("opacity");
-//   } else {
-//     el.classList.add("d-flex");
-//   }
-// });
-
-// hide show article content on hover
-let descriptions = document.querySelectorAll(".card-img-overlay");
-
-descriptions.forEach((des) => {
-  des.addEventListener(
-    "mouseover",
-    function () {
-      des.classList.add("active");
-    },
-    false
-  );
-  des.addEventListener(
-    "mouseout",
-    function () {
-      des.classList.remove("active");
-    },
-    false
-  );
+  });
 });
 
 // edit padding of section
 
 let sections = document.querySelectorAll("section");
 let navheight = document.querySelectorAll("nav")[0].clientHeight;
-navheight-=1;
+navheight -= 1;
 sections.forEach((sec) => {
   if (sec.getAttribute("id") != "blog") {
     sec.style.paddingTop = navheight + "px";
