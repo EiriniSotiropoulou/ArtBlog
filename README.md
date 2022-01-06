@@ -1,4 +1,4 @@
-<h1># ArtBlog </h1>
+<h1># ArtBlog (ongoing) </h1>
 
 <h2>About</h2>
 <p>Art Blog with the purpose of providing a space for users to express their artistic needs in the form of artworks and articles.</p>
@@ -10,6 +10,7 @@
   <li>CSS</li>
   <li>SCSS</li>
   <li>Vanilla JS</li>
+  <li>JQuery</li>
   <li>Bootstrap</li>
 </ul>
 
