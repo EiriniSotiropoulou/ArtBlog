@@ -10,6 +10,7 @@
   <li>CSS</li>
   <li>SCSS</li>
   <li>Vanilla JS</li>
+  <li>JQuery</li>
   <li>Bootstrap</li>
 </ul>
 
