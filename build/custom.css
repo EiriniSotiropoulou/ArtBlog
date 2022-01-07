@@ -190,7 +190,8 @@ nav .row {
   border-color: #e4eff1 !important;
 }
 
-.card .delete i, .card .edit i {
+.card .delete i,
+.card .edit i {
   padding-right: 0.3em;
   padding-left: 0.3em;
 }
@@ -269,7 +270,7 @@ nav .row {
 }
 
 .contact .left li {
-  font-size: 30px;
+  font-size: 28px;
   list-style: none;
 }
 
