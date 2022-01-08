@@ -23,9 +23,7 @@ $(document).ready(function () {
   let navheight = document.querySelectorAll("nav")[0].clientHeight;
   navheight -= 1;
   sections.forEach((sec) => {
-    if (sec.getAttribute("id") != "blog") {
-      sec.style.paddingTop = navheight + "px";
-    }
+    sec.style.paddingTop = navheight + "px";
   });
 
   //interactivity fo carousel items

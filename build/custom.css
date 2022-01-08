@@ -105,7 +105,7 @@ nav .row {
   transform: translateX(-25%);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .active.carousel-item-end,
 .carousel-item-next:not(.carousel-item-start) {
     transform: translateX(50%);
@@ -116,7 +116,7 @@ nav .row {
     transform: translateX(-50%);
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 763px) {
   .active.carousel-item-end,
 .carousel-item-next:not(.carousel-item-start) {
     transform: translateX(100%);
