@@ -28,20 +28,10 @@ button {
 
 nav {
   background: #4f4f4f;
-  height: 12%;
-  position: fixed !important;
-  top: 0;
-  bottom: 0;
-  z-index: 999;
-  width: 100%;
 }
 
 nav a {
   color: #e4eff1 !important;
-}
-
-#sign {
-  justify-content: end;
 }
 
 .join .secondarybutton {
@@ -60,12 +50,6 @@ nav a {
   background-color: #e4eff1 !important;
   color: #333333 !important;
   border-color: #e4eff1 !important;
-}
-
-#navigation .navbar-nav {
-  display: flex;
-  width: 100%;
-  justify-content: start;
 }
 
 .navbar-toggler-icon {

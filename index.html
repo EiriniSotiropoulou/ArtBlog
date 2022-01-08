@@ -27,46 +27,42 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md ">
+        <nav class="navbar fixed-top navbar-expand-md ">
             <div class="container-fluid p-3">
-                <div class="d-flex w-100 justify-content-between">
-                    <a class="navbar-brand col-sm-5 col-md-2" href="#" class="me-1">Lulukeia Blog</a>
+                <a class="navbar-brand col-sm-5 col-md-2" href="#" class="me-1">Lulukeia Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-sm-8" id="navigation">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link active" aria-current="page" href="#blog" class="me-1">Blog</a>
+                        </li>
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link" href="#artists" class="me-1">Artists</a>
+                        </li>
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link" href="#movements" class="me-1" role="button">
+                                Movements
+                            </a>
+                        </li>
+                        <li class="nav-item ps-lg-4">
+                            <a class="nav-link" href="#contact" class="me-1">Contact</a>
+                        </li>
+                    </ul>
 
-                    <div class="collapse navbar-collapse col-sm-4" id="navigation">
-                        <ul class="navbar-nav me-auto mb-lg-0">
-                            <li class="nav-item ps-lg-4">
-                                <a class="nav-link active" aria-current="page" href="#" class="me-1">Blog</a>
-                            </li>
-                            <li class="nav-item ps-lg-4">
-                                <a class="nav-link" href="#" class="me-1">Artists</a>
-                            </li>
-                            <li class="nav-item dropdown ps-lg-4">
-                                <a class="nav-link" href="#" class="me-1" role="button">
-                                    Movements
-                                </a>
-                            </li>
-                            <li class="nav-item ps-lg-4">
-                                <a class="nav-link" href="#contact" class="me-1">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="join d-flex" id="sign">
+                        <button class="btn btn-outline-success secondarybutton" type="submit"><i
+                                class="fa fa-sign-in-alt"></i>Sign in</button>
+                        <button class="btn btn-outline-success primarybutton" type="submit">Join</button>
+                    </div>
 
-                    </div>
-                    <div class="d-flex col-sm-4 join">
-                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                        <div class="collapse navbar-collapse" id="sign">
-                            <button class="btn btn-outline-success secondarybutton" type="submit"><i
-                                    class="fa fa-sign-in-alt"></i>Sign in</button>
-                            <button class="btn btn-outline-success primarybutton" type="submit">Join</button>
-                        </div>
-                    </div>
-                    <button class="navbar-toggler col-sm-1" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navigation,#sign" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                 </div>
             </div>
         </nav>
+
+
     </header>
 
     <main>
